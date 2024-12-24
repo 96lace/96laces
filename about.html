@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    
+    <title>ᵅᵇᵒᵘᵗ ᘝ</title>
+    <link rel="shortcut icon" type="image/gif" href="aboutmeicon.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    
+    <link rel="stylesheet" href="about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="text/javascript" language="JavaScript">
+			function click(e){
+				document.getElementById("teste").innerHTML = "";
+				var menu = document.getElementById("context_menu");
+				var mouseEvent = e || event;
+				if (mouseEvent.button == 2 || mouseEvent.button == 3) {
+					mostrar(mouseEvent);
+					menu.onmouseout = function(e){
+						var mouseEvent = e || event;
+						var element = mouseEvent.relatedTarget || mouseEvent.toElement; 
+						if (element.nodeName != "LI") {
+							mouseEvent.toElement;
+						}
+					};
+				}
+				if (mouseEvent.button == 0 || mouseEvent.button == 1) {
+					esconder();
+				}
+			}
+			
+			document.onmousedown = click;
+			document.oncontextmenu = function(){
+				return false
+			};
+			function mostrar(e){
+				var menu = document.getElementById("context_menu");
+				menu.style.display = "block";
+				menu.style.top = e.pageY + 5 + "px";
+				menu.style.left = e.pageX + 5 + "px";
+			}
+			
+			function esconder(){
+				setTimeout(function(){
+					var menu = document.getElementById("context_menu");
+					menu.style.display = "none"
+				}, 100);
+			}
+			
+		</script>
+          <script type="text/javascript">
+            if(navigator.userAgent.match(/Mobile|Windows Phone|Lumia|Android|iPhone|iPod|Blackberry|PlayBook|BB10|Opera Mini|\bCrMo\/|Opera Mobi/i) ){
+               location.replace("mb.html");
+             }
+           </script>
+   
+  </head>
+
+  <body oncontextmenu="return false" ondragstart="return false">
+    <div id="everything">
+    <div id="teste"></div>
+	<div id="homepage">
+		<a href="index.html" target="_blank" style="text-decoration: none; color:#414141; width: 174px;">
+			⌞homepage⌝
+		</a>
+	</div>
+	<div id="portfolio">
+		<a href="portfolio.html" target="_blank" style="text-decoration: none; color:#414141; width: 174px;">
+			⌞portfolio⌝
+		</a>
+	</div>
+	<div id="textcontainer">
+		<div id="text1">
+			<span id="firstletter">w</span>elcome to my 
+			about me page. here is where you can find basic info about me, as well as a few of my interests!
+			<br> <br>
+			i am a student from the united kingdom currently studying games design, but hoping to pursue character design in the future.
+			<br> <br>
+			i would definitely describe myself as code-obsessed, as i spend as much time as i can expanding my knowledge on web and game scripting.
+			i have currently self-taught and received tutoring for javascript, html and css, and i am currently learning c#.
+			<br> 
+		</div>
+		<div id="banner2">
+			<img src="banner2.png">
+		</div>
+		<div id="text2">
+		<span id="firstletter">i</span><span id="rest">nterests</span>.
+		<br>
+		baking, catholic imagery, computers, countryside, dark fantasy, greek mythology, indie rock, marvel, old psx visuals, psychology themes, sci-fi, southern gothic aesthetic.
+		<br> <br>
+		<span id="firstletter">f</span><span id="rest">avourites</span>.
+		<br> animal: lamb, anime: nana, band: oasis/nirvana, cartoon: adventure time, colour: dark red, food: cottage pie, fashion style: dark coquette, game: red dead redemption 2, season: spring
+		<div id="banner2">
+			<img src="banner2.png">
+		</div>
+		<div id="text3">
+			<span id="firstletter">a</span><span id="rest">strology</span> 
+			<br>
+			𖤓 virgo ☾ sagittarius ↑ leo
+		<br> <br>
+			<span id="firstletter">p</span><span id="rest">ersonality</span> ‎  <span id="firstletter">q</span><span id="rest">uizzes</span>
+		<br>
+		four temperments: phlegmatic, mbti: infp, moral alignment: true neutral
+	</div>
+	</div>
+	</div>
+	<div id="diary">
+		<a href="ramblings.html" target="_blank" style="text-decoration: none; color:#414141; width: 174px;">
+			⌞virtual diary⌝
+		</a>
+	</div>
+	<div id="musicplayer" class="player1010">
+		♫
+	</div>
+	<audio id="myplaylist" src="https://files.catbox.moe/h9qn3r.mp3"></audio>
+	<script src="musicbox2.js"></script>
+    <div id="title111">
+		about me
+	</div>
+	<div id="border1">
+		<img src="borderyay.png">
+	</div>
+	<div id="border2">
+		<img src="borderyay.png">
+	</div>
+	<div id="border3">
+		<img src="borderyay.png">
+	</div>
+	<div id="border4">
+		<img src="borderyay.png">
+	</div>
+    <div class="container1"></div>
+    <div class="container2">
+        <div class="container3">
+			<div id="header2">
+			
+			</div>
+			<div id="banner1">
+				<img src="b12.webp">
+			</div>
+			<div id="header1">
+				<img src="header1212.png">
+			</div>
+		</div>
+    </div>
+    <div id="context_menu">
+    </div>
+    <div id="credits" style="text-decoration: none; border-bottom: 1px dotted #414141; padding-bottom: 5px; color:#414141; width: 174px;">
+		rwositas ♱ all rights reserved
+	</div>
+  </body>
+  </html>

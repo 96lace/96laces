@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    
+    <title>ꔫ</title>
+    <link rel="shortcut icon" type="image/gif" href="bear.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <link rel="stylesheet" href="credits.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+html, body {
+
+margin: 0;
+
+padding: 0;
+
+height: 100%;
+
+}
+    </style>
+
+    <script type="text/javascript" language="JavaScript">
+			function click(e){
+				document.getElementById("teste").innerHTML = "";
+				var menu = document.getElementById("context_menu");
+				var mouseEvent = e || event;
+				if (mouseEvent.button == 2 || mouseEvent.button == 3) {
+					mostrar(mouseEvent);
+					menu.onmouseout = function(e){
+						var mouseEvent = e || event;
+						var element = mouseEvent.relatedTarget || mouseEvent.toElement; 
+						if (element.nodeName != "LI") {
+							mouseEvent.toElement;
+						}
+					};
+				}
+				if (mouseEvent.button == 0 || mouseEvent.button == 1) {
+					esconder();
+				}
+			}
+			
+			document.onmousedown = click;
+			document.oncontextmenu = function(){
+				return false
+			};
+			function mostrar(e){
+				var menu = document.getElementById("context_menu");
+				menu.style.display = "block";
+				menu.style.top = e.pageY + 5 + "px";
+				menu.style.left = e.pageX + 5 + "px";
+			}
+			
+			function esconder(){
+				setTimeout(function(){
+					var menu = document.getElementById("context_menu");
+					menu.style.display = "none"
+				}, 100);
+			}
+		</script>
+  <script type="text/javascript">
+    if(navigator.userAgent.match(/Mobile|Windows Phone|Lumia|Android|iPhone|iPod|Blackberry|PlayBook|BB10|Opera Mini|\bCrMo\/|Opera Mobi/i) ){
+       location.replace("mb.html");
+     }
+   </script>
+  </head>
+
+  <body oncontextmenu="return false" ondragstart="return false">
+    <div id="everything">
+    <div id="teste"></div>
+    <div id="context_menu">
+        (｡•́︿•̀｡)
+    </div>
+    <div id="nav_menu">
+        <img src="nav menu.png">
+    </div>
+    <div id="deco1">
+        <img src="deco1.png">.
+    </div>
+    <div id="deco2">
+        <img src="deco2.png">
+    </div>
+    <div id="homepage">
+        <img src="homepage.png">
+    </div>
+    <div id="home">
+        <a href="index.html"><img src="home.png"></a>
+    </div>
+    <div id="about">
+        <a href="about.html"><img src="about.png"></a>
+    </div>
+    <div id="contact">
+        <a href="contact.html"><img src="contact.png"></a>
+    </div>
+    <div id="portfolio">
+        <a href="portfolio.html" target="_blank"><img src="portfolio.png"></a>
+    </div>
+    <div id="more">
+        <a href="credits.html"><img src="credits.png"></a>
+    </div>
+    <div id="credits1">
+       <sub>
+        <img src="emoji1.gif">
+       </sub>
+        resources:
+        <sub>
+            <img src="emoji4.gif">
+        </sub>
+    </div>
+    <div id="credits2">
+        ♪ <a href="https://www.w3schools.com/" 
+        style="text-decoration: dotted; 
+        color:rgb(206, 162, 180);">w3schools</a> all coding purposes.
+        <br>
+        ♪ <a href="https://www.remove.bg/upload" 
+        style="text-decoration: dotted; 
+        color:rgb(206, 162, 180);">remove.bg</a> for removing backgrounds
+        and creating pngs.
+        <br>
+        ♪ <a href="https://imagecolorpicker.com/en" 
+        style="text-decoration: dotted; 
+        color:rgb(206, 162, 180);">color picker</a> to select precise 
+        colours from images and also create colour palettes.
+        <br>
+        ♪ <a href="https://emojicombos.com/aesthetic-symbols" 
+        style="text-decoration: dotted; 
+        color:rgb(206, 162, 180);">emoji symbols</a> for cute symbols and text art.
+        <br>
+        ♪ <a href="https://www.tumblr.com/" 
+          style="text-decoration: dotted; 
+          color:rgb(206, 162, 180);">tumblr</a> for gifs and pngs.
+        <br>
+        ♪ <a href="https://www.pinterest.com/" 
+          style="text-decoration: dotted; 
+          color:rgb(206, 162, 180);">pinterest</a> for imagery but also one of my main sources for inspiration.
+          <br>
+          ♪ <a href="https://screenfly.org/" 
+            style="text-decoration: dotted; 
+            color:rgb(206, 162, 180);">screenfly</a> allows you to see exactly how your site looks on different devices and screen sizes. very important!
+    </div>
+     <div id="credits3">
+        <sub>
+            <img src="emoji5.gif">
+        </sub>
+        please read:
+        <sub>
+            <img src="emoji6.gif">
+        </sub>
+     </div>
+     <div id="pleaseread">
+        my work is heavily inspired by old javascript flash websites and games. similarly, i love to create
+        visually appealing and interactive websites. i use html, css and javascript of my own knowledge, which is always expanding, to create
+        my websites!
+        any imagery, fonts, music, etc are under fair use copyright law unless i state otherwise (meaning it is created only by me),
+        i only sell and profit off of work made solely by myself. should you see, as in the owner, any artwork, music, etc 
+        that you would like removed, please contact me and it will be taken down. my own work is able to be used as a profile picture, or even a post on
+        other sites as long as visible credit is given. this is because i would like exposure as much as possible. crediting
+        me helps to highlight the effort gone into my work. i tend to use christian imagery and biblical references within my work. this is not to force any beliefs 
+        on others but simply because christianity is a part of my own identity. i do not belong to any particular political ideology nor do i try to enforce them. 
+        all religious/non-religious identities are welcome and celebrated on my website. regarding privacy, this website of mine uses/requires zero cookies whatsoever. i make zero
+        commission from the website itself simply existing, thus ensuring all of your privacy is secure and not sold to third-party services.
+     </div>
+     <div id="townies">
+        <a href="wip.css" style="text-decoration: none; color:#ffffff;
+        text-shadow:#1f1b19d8 -1px -1px 6px;">???</a>
+    </div>
+    <div id="myramblings">
+        <a href="ramblings.html" 
+        style="text-decoration: none; color:#ffffff;
+        text-shadow:#1f1b19d8 -1px -1px 6px;">ramblings</a>
+    </div>
+    <div id="christian">
+        <img src="christian.png">
+    </div>
+    <div id="baby">
+        <img src="baby.png">
+    </div>
+    <div id="counter111">
+        <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39793858&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=39793858&main=1" /></noscript>
+    </div>
+    <div id="footer111">
+    <a href="home.html" style="text-decoration: none; color:#ffffff;">© rwositas est. 2024 <br> 
+    ___________________</a></div>
+</div>
+  </body>
+  </html>

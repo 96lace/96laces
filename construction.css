@@ -1,0 +1,504 @@
+@font-face{
+    font-family: "bellefair";
+    src: url('Bellefair-Regular.ttf')
+}
+
+@font-face{
+    font-family: "adinekir";
+     src: url('adinekir.ttf')
+}
+
+
+a:-webkit-any-link{
+    cursor: url(lambcursor2.png), pointer;
+}
+
+::selection{
+   text-shadow: 0 0 2px #be9595;color:#be9595 
+}
+
+::-moz-selection{
+   text-shadow: 0 0 2px #be9595;color:#be9595
+}
+
+#workerbear{
+    z-index: 1;
+    position: absolute;
+    top: 400px;
+    left: 1175px;
+}
+
+#workerbear:hover{
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 100px rgb(255, 255, 255));
+}
+
+#backdrop{
+    position: absolute;
+    top: 490px;
+    left: 1181px;
+}
+
+#wip1{
+    position: absolute;
+    top: 800px;
+    left: 1160px;
+    color:#c49aa7;
+    width: 300px;
+}
+
+#footer111{
+    position: absolute;
+    left: 1220px;
+    top: 1100px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#context_menu{
+    position: absolute;
+    z-index: 11111;
+    background-image: url('https://i.pinimg.com/564x/96/fe/47/96fe47b019e1ef472d940c2ad58f7997.jpg');
+	background-size: 50%;
+    border: 1px dotted #66574c;
+    color: #ffffff;
+    display: none;
+    letter-spacing: 2px;
+    width: 81px;
+}
+
+
+body{
+    background-image: url('https://sozai.pooftie.me/bg/bg%20(16).png');
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    cursor: url(lambcursor1.png), auto;
+    font-family:'bellefair';
+    font-weight: 500;
+    font-size: 20px;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+/*ipad/tablet screens*/
+
+
+@media screen and (min-width: 800px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 50%;
+    left:-500px;
+    top:-240px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 100% !important;
+    }
+}
+
+@media screen and (min-width: 900px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 66%;
+    left:-580px;
+    top:-260px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 100% !important;
+    }
+}
+
+@media screen and (min-width: 1000px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 68%;
+    left:-550px;
+    top:-280px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+/*mobile screens*/
+
+@supports not (-webkit-touch-callout: none) {
+    @media screen and (min-width: 1px) and (max-width: 428px)and (orientation: portrait){
+    #everything { position: absolute; zoom: 60%;
+    left:-940px;
+    top:-100px;
+    }
+    body{
+        background-size: 300%;
+    }
+}}
+
+
+/*monitors*/
+
+@media screen and (min-width: 1200px) and (orientation: landscape){
+    #everything { 
+    position: absolute; 
+    zoom: 80%;
+    left:-510px;
+    top:-200px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 100% !important;
+    }
+}
+
+@media screen and (min-width: 1300px) and (orientation: landscape){
+    #everything { 
+    position: absolute; 
+    zoom: 80%;
+    left:-460px;
+    top:-220px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+@media screen and (min-width: 1400px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 90%;
+    left:-500px;
+    top:-200px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+@media screen and (min-width: 1600px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 90%;
+    left:-420px;
+    top:-200px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+@media screen and (min-width: 1680px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 100%;
+    left:-480px;
+    top:-180px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+    
+@media screen and (min-width: 1700px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 100%;
+    left:-340px;
+    top:-80px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+@media screen and (min-width: 1900px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 100%;
+    left:-340px;
+    top:-160px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+/*around my monitor size*/
+
+@media screen and (min-width: 2000px) and (orientation: landscape){
+    #everything { 
+        position: absolute;
+        zoom: 100%;
+        top: -2%;
+        left: -1%; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 100% !important;
+    }
+}
+
+@media screen and (min-width: 2200px) and (orientation: landscape){
+    #everything { 
+        position: absolute;
+        zoom: 90%;
+        top: -100px;
+        left: -100px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 100% !important;
+    }
+}
+
+@media screen and (min-width: 2500px) and (orientation: landscape){
+    #everything { 
+        position: absolute;
+        zoom: 100%;
+        top: -40px;
+        left: -20px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 180px !important;
+    }
+}
+
+    @media screen and (min-width: 3000px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 260%;
+    left:240px;
+    top:80px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+} 
+
+
+/* tv monitors for some reason*/
+
+@media screen and (max-width:640px) and (orientation: landscape){
+    #everything { 
+        position: absolute;
+        zoom: 50%;
+        top: -240px;
+        left: -690px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+@media screen and (min-width:3840px) and (orientation: landscape){
+            #everything { 
+                position: absolute;
+                zoom: 220%;
+                top: -220px;
+                left: -480px; }
+            #text { 
+                overflow: auto; 
+                overflow: scroll; 
+            }
+            #text111{
+                -webkit-text-size-adjust: 145%;
+                text-size-adjust: 145%;
+                line-height: 10px !important;
+                opacity: 80% !important;
+            }
+            #context_menu{
+                line-height: 24px !important;
+            }
+            body{
+                background-size: 100% !important;
+            }
+}
+
+@media screen and (min-width:7000px) and (orientation: landscape){
+                #everything { 
+                    position: absolute;
+                    zoom: 220%;
+                    top: -220px;
+                    left: 400px; }
+                #text { 
+                    overflow: auto; 
+                    overflow: scroll; 
+                }
+                #text111{
+                    -webkit-text-size-adjust: 145%;
+                    text-size-adjust: 145%;
+                    line-height: 10px !important;
+                    opacity: 80% !important;
+                }
+                #context_menu{
+                    line-height: 24px !important;
+                }
+                body{
+                    background-size: 100% !important;
+                }
+}
+    
