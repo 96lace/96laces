@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    
+    <title>방 ♡ ̆̈</title>
+    <link rel="shortcut icon" type="image/gif" href="virtualroomlogo.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <link rel="stylesheet" href="virtualroom.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="text/javascript" language="JavaScript">
+        function click(e){
+            document.getElementById("teste").innerHTML = "";
+            var menu = document.getElementById("context_menu");
+            var mouseEvent = e || event;
+            if (mouseEvent.button == 2 || mouseEvent.button == 3) {
+                mostrar(mouseEvent);
+                menu.onmouseout = function(e){
+                    var mouseEvent = e || event;
+                    var element = mouseEvent.relatedTarget || mouseEvent.toElement; 
+                    if (element.nodeName != "LI") {
+                        mouseEvent.toElement;
+                    }
+                };
+            }
+            if (mouseEvent.button == 0 || mouseEvent.button == 1) {
+                esconder();
+            }
+        }
+        
+        document.onmousedown = click;
+        document.oncontextmenu = function(){
+            return false
+        };
+        function mostrar(e){
+            var menu = document.getElementById("context_menu");
+            menu.style.display = "block";
+            menu.style.top = e.pageY + 5 + "px";
+            menu.style.left = e.pageX + 5 + "px";
+        }
+        
+        function esconder(){
+            setTimeout(function(){
+                var menu = document.getElementById("context_menu");
+                menu.style.display = "none"
+            }, 100);
+        }
+    </script>
+      <script type="text/javascript">
+        if(navigator.userAgent.match(/Mobile|Windows Phone|Lumia|Android|iPhone|iPod|Blackberry|PlayBook|BB10|Opera Mini|\bCrMo\/|Opera Mobi/i) ){
+           location.replace("mb.html");
+         }
+       </script>
+       <script type="text/javascript">
+        if(navigator.userAgent.match(/Mobile|Windows Phone|Lumia|Android|iPhone|iPod|Blackberry|PlayBook|BB10|Opera Mini|\bCrMo\/|Opera Mobi/i) ){
+           location.replace("mb.html");
+         }
+       </script>
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false">
+    <div id="everything">
+        <div id="text">
+    <div id="teste"></div>
+    <div id="context_menu">
+        no.
+    </div>
+</div>
+<div id="virtualroomborder">
+    <img src="virtualroomborder.png">
+</div>
+<div id="furniture111">
+    <img src="furniture.png">
+</div>
+<div id="livingroom">
+    <img src="livingroom.png">
+</div>
+<div id="tvstand">
+    <a href="https://www.youtube.com/watch?v=s50vvwTystA&ab_channel=LeeWalters" target="blank"><img src="tv.png"></a>
+</div>
+<div id="lamp1">
+    <img src="lamp.png">
+</div>
+<div id="squaredoily212">
+    <img src="squaredoily212.png">
+</div>
+<div id="bedroomdoor">
+    <a href="virtualroom2.html"><img src="bedroomdoor.png"></a>
+</div>
+<div id="lambgif">
+    <img src="lambgif.gif">
+</div>
+<div id="credits">
+    <a href="index.html" target="blank" style="text-decoration: none; color: #9b8d8d;">꒰ rwositas ୨୧ all rights reserved ꒱</a>
+</div>
+</body>
+</html>

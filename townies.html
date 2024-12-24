@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    
+    <title>ꔫ</title>
+    <link rel="shortcut icon" type="image/gif" href="bear.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <link rel="stylesheet" href="townies.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="text/javascript" language="JavaScript">
+			function click(e){
+				document.getElementById("teste").innerHTML = "";
+				var menu = document.getElementById("context_menu");
+				var mouseEvent = e || event;
+				if (mouseEvent.button == 2 || mouseEvent.button == 3) {
+					mostrar(mouseEvent);
+					menu.onmouseout = function(e){
+						var mouseEvent = e || event;
+						var element = mouseEvent.relatedTarget || mouseEvent.toElement; 
+						if (element.nodeName != "LI") {
+							mouseEvent.toElement;
+						}
+					};
+				}
+				if (mouseEvent.button == 0 || mouseEvent.button == 1) {
+					esconder();
+				}
+			}
+			
+			document.onmousedown = click;
+			document.oncontextmenu = function(){
+				return false
+			};
+			function mostrar(e){
+				var menu = document.getElementById("context_menu");
+				menu.style.display = "block";
+				menu.style.top = e.pageY + 5 + "px";
+				menu.style.left = e.pageX + 5 + "px";
+			}
+			
+			function esconder(){
+				setTimeout(function(){
+					var menu = document.getElementById("context_menu");
+					menu.style.display = "none"
+				}, 100);
+			}
+		</script>
+  <script type="text/javascript">
+    if(navigator.userAgent.match(/Mobile|Windows Phone|Lumia|Android|iPhone|iPod|Blackberry|PlayBook|BB10|Opera Mini|\bCrMo\/|Opera Mobi/i) ){
+       location.replace("mb.html");
+     }
+   </script>
+  </head>
+  
+  <body oncontextmenu="return false" ondragstart="return false">
+    <div id="everything">
+    <div id="teste"></div>
+    <div id="context_menu">
+        (｡•́︿•̀｡)
+    </div>
+    <div id="townie">
+    <sub>
+        <img src="emoji2.gif">
+    </sub>
+    link me?
+    <sub>
+        <img src="emoji6.gif">
+    </sub>
+   </div>
+   <div id="townie2">
+    <sub>
+        <img src="emoji1.gif">
+    </sub>
+    townies
+    <sub>
+        <img src="emoji3.gif">
+    </sub>
+   </div>
+   <div id="sitesilike">
+    other websites that i adore
+   </div>
+   <div id="sitescontainer">
+    <a href="https://firozah.com/" target="blank"><img src="https://firozah.com/newbutton.gif"></a>
+    <a href="https://fangist.neocities.org/"><img src="https://fangist.neocities.org/button.gif"></a> 
+    <a href="https://lucard.neocities.org/"><img src="https://lucard.neocities.org/IMG/88x31/lucard.png"></a>
+    <a href="https://salixx.neocities.org/" target="blank"><img src="https://salixx.neocities.org/salixx%2088x31.gif""></a> 
+    <a href="https://cloverbell.neocities.org/" target=blank><img src="https://cloverbell.neocities.org/n_n/cloverbell.gif"></a> 
+    <a href="https://fuchi.neocities.org/" target="blank"><img src="https://fuchi.neocities.org/fuchi_button.jpg"></a>
+    <a href="https://notprincehamlet.neocities.org/" target="blank"><img src="https://notprincehamlet.neocities.org/button1.png"></a>
+    <a href="https://knightsofgaia.neocities.org/" target="blank"><img src="https://knightsofgaia.neocities.org/buttons/kogforest.png"></a>
+    <a href="https://blamensir.neocities.org/" target="blank"><img src="https://blamensir.neocities.org/banners/banner1.png"></a>
+</div>
+   <div id="linkmebear">
+   ʕ •ᴥ•ʔ
+   </div>
+   <div id="linkpatch">
+    <a href="rwositaslink.gif" download="rwositaslink.gif"><img src="rwositaslink.gif" style="transform: scale(.3)"></a>
+   </div>
+    <div id="nav_menu">
+        <img src="nav menu.png">
+    </div>
+    <div id="deco1">
+        <img src="deco1.png">.
+    </div>
+    <div id="deco2">
+        <img src="deco2.png">
+    </div>
+    <div id="homepage">
+        <img src="homepage.png">
+    </div>
+    <div id="home">
+        <a href="index.html"><img src="home.png"></a>
+    </div>
+    <div id="townies">
+        <a href="townies.html" style="text-decoration: none; color:#ffffff; 
+        text-shadow:#1f1b19d8 -1px -1px 6px;">townies</a>
+    </div>
+    <div id="myramblings">
+        <a href="ramblings.html" 
+        style="text-decoration: none; color:#ffffff; 
+        text-shadow:#1f1b19d8 -1px -1px 6px;">ramblings</a>
+    </div>
+    <div id="christian">
+        <img src="christian.png">
+    </div>
+    <div id="baby">
+        <img src="baby.png">
+    </div>
+    <div id="about">
+        <a href="about.html"><img src="about.png"></a>
+    </div>
+    <div id="contact">
+        <a href="contact.html"><img src="contact.png"></a>
+    </div>
+    <div id="portfolio">
+        <a href="portfolio.html" target="blank"><img src="portfolio.png"></a>
+    </div>
+    <div id="more">
+        <a href="credits.html"><img src="credits.png"></a>
+    </div>
+    <div id="counter111">
+        <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39793858&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=39793858&main=1" /></noscript>
+    </div>
+    <div id="footer111">
+        <a href="home.html" style="text-decoration: none; color:#ffffff;">© rwositas est. 2024 <br> 
+        ___________________</a></div>
+    </div>
+  </body>
+  </html>
