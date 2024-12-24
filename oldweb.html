@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    
+    <title>᠀𓏲</title>
+    <link rel="shortcut icon" type="image/gif" href="oldwebicon.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <link rel="stylesheet" href="oldweb.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="text/javascript" language="JavaScript">
+        function click(e){
+            document.getElementById("teste").innerHTML = "";
+            var menu = document.getElementById("context_menu");
+            var mouseEvent = e || event;
+            if (mouseEvent.button == 2 || mouseEvent.button == 3) {
+                mostrar(mouseEvent);
+                menu.onmouseout = function(e){
+                    var mouseEvent = e || event;
+                    var element = mouseEvent.relatedTarget || mouseEvent.toElement; 
+                    if (element.nodeName != "LI") {
+                        mouseEvent.toElement;
+                    }
+                };
+            }
+            if (mouseEvent.button == 0 || mouseEvent.button == 1) {
+                esconder();
+            }
+        }
+        
+        document.onmousedown = click;
+        document.oncontextmenu = function(){
+            return false
+        };
+        function mostrar(e){
+            var menu = document.getElementById("context_menu");
+            menu.style.display = "block";
+            menu.style.top = e.pageY + 5 + "px";
+            menu.style.left = e.pageX + 5 + "px";
+        }
+        
+        function esconder(){
+            setTimeout(function(){
+                var menu = document.getElementById("context_menu");
+                menu.style.display = "none"
+            }, 100);
+        }
+    </script>
+      <script type="text/javascript">
+        if(navigator.userAgent.match(/Mobile|Windows Phone|Lumia|Android|iPhone|iPod|Blackberry|PlayBook|BB10|Opera Mini|\bCrMo\/|Opera Mobi/i) ){
+           location.replace("mb.html");
+         }
+       </script>
+       <script type="text/javascript">
+        // <![CDATA[
+        var colour="#F7E0E3";
+        var sparkles=120;
+        
+        /****************************
+        *  Tinkerbell Magic Sparkle *
+        * (c) 2005 mf2fm web-design *
+        *  http://www.mf2fm.com/rv  *
+        * DON'T EDIT BELOW THIS BOX *
+        ****************************/
+        var x=ox=400;
+        var y=oy=300;
+        var swide=800;
+        var shigh=600;
+        var sleft=sdown=0;
+        var tiny=new Array();
+        var star=new Array();
+        var starv=new Array();
+        var starx=new Array();
+        var stary=new Array();
+        var tinyx=new Array();
+        var tinyy=new Array();
+        var tinyv=new Array();
+        
+        window.onload=function() { if (document.getElementById) {
+          var i, rats, rlef, rdow;
+          for (var i=0; i<sparkles; i++) {
+            var rats=createDiv(3, 3);
+            rats.style.visibility="hidden";
+            document.body.appendChild(tiny[i]=rats);
+            starv[i]=0;
+            tinyv[i]=0;
+            var rats=createDiv(5, 5);
+            rats.style.backgroundColor="transparent";
+            rats.style.visibility="hidden";
+            var rlef=createDiv(1, 5);
+            var rdow=createDiv(5, 1);
+            rats.appendChild(rlef);
+            rats.appendChild(rdow);
+            rlef.style.top="2px";
+            rlef.style.left="0px";
+            rdow.style.top="0px";
+            rdow.style.left="2px";
+            document.body.appendChild(star[i]=rats);
+          }
+          set_width();
+          sparkle();
+        }}
+        
+        function sparkle() {
+          var c;
+          if (x!=ox || y!=oy) {
+            ox=x;
+            oy=y;
+            for (c=0; c<sparkles; c++) if (!starv[c]) {
+              star[c].style.left=(starx[c]=x)+"px";
+              star[c].style.top=(stary[c]=y)+"px";
+              star[c].style.clip="rect(0px, 5px, 5px, 0px)";
+              star[c].style.visibility="visible";
+              starv[c]=50;
+              break;
+            }
+          }
+          for (c=0; c<sparkles; c++) {
+            if (starv[c]) update_star(c);
+            if (tinyv[c]) update_tiny(c);
+          }
+          setTimeout("sparkle()", 40);
+        }
+        
+        function update_star(i) {
+          if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
+          if (starv[i]) {
+            stary[i]+=1+Math.random()*3;
+            if (stary[i]<shigh+sdown) {
+              star[i].style.top=stary[i]+"px";
+              starx[i]+=(i%5-2)/5;
+              star[i].style.left=starx[i]+"px";
+            }
+            else {
+              star[i].style.visibility="hidden";
+              starv[i]=0;
+              return;
+            }
+          }
+          else {
+            tinyv[i]=50;
+            tiny[i].style.top=(tinyy[i]=stary[i])+"px";
+            tiny[i].style.left=(tinyx[i]=starx[i])+"px";
+            tiny[i].style.width="2px";
+            tiny[i].style.height="2px";
+            star[i].style.visibility="hidden";
+            tiny[i].style.visibility="visible"
+          }
+        }
+        
+        function update_tiny(i) {
+          if (--tinyv[i]==25) {
+            tiny[i].style.width="1px";
+            tiny[i].style.height="1px";
+          }
+          if (tinyv[i]) {
+            tinyy[i]+=1+Math.random()*3;
+            if (tinyy[i]<shigh+sdown) {
+              tiny[i].style.top=tinyy[i]+"px";
+              tinyx[i]+=(i%5-2)/5;
+              tiny[i].style.left=tinyx[i]+"px";
+            }
+            else {
+              tiny[i].style.visibility="hidden";
+              tinyv[i]=0;
+              return;
+            }
+          }
+          else tiny[i].style.visibility="hidden";
+        }
+        
+        document.onmousemove=mouse;
+        function mouse(e) {
+          set_scroll();
+          y=(e)?e.pageY:event.y+sdown;
+          x=(e)?e.pageX:event.x+sleft;
+        }
+        
+        function set_scroll() {
+          if (typeof(self.pageYOffset)=="number") {
+            sdown=self.pageYOffset;
+            sleft=self.pageXOffset;
+          }
+          else if (document.body.scrollTop || document.body.scrollLeft) {
+            sdown=document.body.scrollTop;
+            sleft=document.body.scrollLeft;
+          }
+          else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+            sleft=document.documentElement.scrollLeft;
+            sdown=document.documentElement.scrollTop;
+          }
+          else {
+            sdown=0;
+            sleft=0;
+          }
+        }
+        
+        window.onresize=set_width;
+        function set_width() {
+          if (typeof(self.innerWidth)=="number") {
+            swide=self.innerWidth;
+            shigh=self.innerHeight;
+          }
+          else if (document.documentElement && document.documentElement.clientWidth) {
+            swide=document.documentElement.clientWidth;
+            shigh=document.documentElement.clientHeight;
+          }
+          else if (document.body.clientWidth) {
+            swide=document.body.clientWidth;
+            shigh=document.body.clientHeight;
+          }
+        }
+        
+        function createDiv(height, width) {
+          var div=document.createElement("div");
+          div.style.position="absolute";
+          div.style.height=height+"px";
+          div.style.width=width+"px";
+          div.style.overflow="hidden";
+          div.style.backgroundColor=colour;
+          return (div);
+        }
+        // ]]>
+        </script>
+        
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false">
+    <div id="everything">
+        <div id="text">
+    <div id="teste"></div>
+    <div id="context_menu">
+    </div>
+    <div class="wavy111">
+      <span style="--i:1">c</span>
+      <span style="--i:2">u</span>
+      <span style="--i:3">r</span>
+      <span style="--i:4">r</span>
+      <span style="--i:5">e</span>
+      <span style="--i:6">n</span>
+      <span style="--i:7">t</span>
+      <span style="--i:8">l</span>
+      <span style="--i:9">y</span>
+      <span style="--i:10">:</span>
+  </div>
+  <div class="wavy112">
+    <span style="--i:1">c</span>
+    <span style="--i:2">a</span>
+    <span style="--i:3">l</span>
+    <span style="--i:4">e</span>
+    <span style="--i:5">n</span>
+    <span style="--i:6">d</span>
+    <span style="--i:7">e</span>
+    <span style="--i:8">r</span>
+    <span style="--i:9">:</span>
+</div>
+    <div class="mainbody">
+        <div class="innerbody">
+          <div id="credits">
+            <a href="index.html" target="blank" style="text-decoration: none;
+            color:#a39d9d; border-bottom:#a39d9d 1px dotted;">designed by rwositas, all rights reserved</a> 
+          </div>
+          <div id="virtupetframe">
+            <img src="adadsdasdad.png">
+          </div>
+          <div id="virtupet">
+            <iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=lambie&dob=1732985395&gender=f&element=Water&pet=https%3A%2F%2Ffiles.catbox.moe%2Fxl2qov.png&map=https%3A%2F%2Fi.pinimg.com%2F736x%2F04%2F78%2Fa2%2F0478a277fb90cf411c6c907a9944fc0e.jpg&background=&tablecolor=%23e7d0d2&textcolor=%23d8b0b0" frameborder="0"></iframe>
+          </div>
+          <div id="lacetop1">
+          </div>
+          <div id="lacebottom1">
+          </div>
+          <div id="image1">
+          </div>
+          <div id="image2">
+          </div>
+          <div id="image3">
+            <div id="image3text">
+              the ps3 and nintendo 3ds were peak gaming for me. if i had a time machine i would ask to spend one day in either 2012 or 2015 <img src="emoji7.gif">
+              <br> <br> did any of you play tomodachi life ? ཆི❤︎ཆྀ
+            </div>
+          </div>
+          <div id="marqueecontainer">
+            <div id="leftcurtain">
+              <img src="lcurtain.png">
+            </div>
+            <div id="rightcurtain">
+              <img src="rcurtain.png">
+            </div>
+            <div class="modernmarquee">
+              <img src="https://64.media.tumblr.com/59579e5527e4f926122ddb44bffc335f/704f4ace9de71c4b-04/s100x200/7f18b5a93cc727082786ae56f57b4575c84577ab.pnj">
+              <img src="https://64.media.tumblr.com/97a0c487981805269ed73917f48adb21/473928ea48888009-9f/s100x200/8367b381f5ffcb29552b1b7e349767bf7da34e81.pnj">
+              <img src="https://64.media.tumblr.com/66e535506a49cb52338c344c81dc7ee3/704f4ace9de71c4b-9f/s100x200/e665d9a42bf30a705e5e22caef9576bae90f0e8f.pnj">
+              <img src="https://64.media.tumblr.com/7ac328204395dc076221475d3af8ecc2/704f4ace9de71c4b-cf/s100x200/4a7541ccbef5b285823491aaed29230c6f49aa9f.pnj">
+            </div>
+          </div>
+          <div id="welcomeboxouter">
+            <div id="welcomeboxinner">
+              welcome to 'old web'. this is an ode to the 2010s that i was lucky to grow up in. 
+              <sub>
+                <img src="emoji2.gif">
+              </sub>
+              this site will most likely never be updated further, but please take the time to explore.
+              <br> <br> as an '06 baby, i am so happy i was able to experience the 2010s right up to the decline in 2019.
+              i still remember the flash games and interactive java era to this very day <sub> 
+                <img src="emoji3.gif"></sub>  <br><br> although we're entering the final stage of minimalism and removal of individuality, 
+                <sub> <img src="emoji7.gif"></sub> i remain
+                hopeful that maybe people will bring back the creativity of the old web!
+              <br> <br> (p.s links at the top are merely for aesthetics, and do not lead anywhere in particular.)
+            </div>
+          </div>
+          <div id="statusboxouter">
+            <div id="statusboxheader">
+              <div id="buttonx">
+                <img src="butt_x2.png">
+              </div>
+            </div>
+            <div id="calenderouter">
+              <div id="calenderheader">
+                <div id="buttonz">
+                  <img src="butt_x2.png">
+                </div>
+              </div>
+              <div id="calenderinner">
+              </div>
+            </div>
+            <div id="statusboxinner">
+              <div id="questions111">
+                feeling:
+                <br>
+                listening:
+                <br>
+                eating:
+                <br>
+                watching:
+                <br>
+                playing:
+              </div>
+              <div class="answers111">
+                <div id="feeling">
+                  creative! ☆
+                </div>
+                <div id="listening">
+                  the smiths
+                </div>
+                <div id="eating">
+                  biscoff icecream
+                </div>
+                <div id="watching">
+                  house of the dragon
+                </div>
+                <div id="playing">
+                  red dead redemption 2
+                </div>
+                </div>
+            </div>
+            <div id="yankeecandle">
+              <img src="yankee.png">
+            </div>
+          </div>
+          <div id="musicplayer">
+            <img src="musicbox.png" class="player666">
+          </div>
+          <audio id="audio111" src="https://files.catbox.moe/3prn64.mp3"></audio>
+          <script src="musicbox.js"></script>
+            <div class="header">
+                <div id="headertext">
+                    old web
+                </div>
+                <div id="byme">
+                    by rwositas
+                </div>
+            </div>
+            <div class="options111">
+                <div id="home111">
+                    <a href="" style="text-decoration: none; color: #ffffff;">
+                        home
+                    </a>
+                </div>
+                <div id="about111">
+                    <a href="" style="text-decoration: none; color:#ffffff;">
+                        about
+                    </a>
+                </div>
+                <div id="links111">
+                    <a href="" style="text-decoration: none; color:#ffffff;">
+                        links
+                    </a>
+                </div>
+                <div id="blog111">
+                  <a href="" style="text-decoration: none; color:#ffffff;">
+                      blog
+                  </a>
+              </div>
+            </div>
+            <div id="optionsbg">
+            </div>
+        </div>
+    </div>
+    <div id="borderleft">
+    </div>
+    <div id="borderright">
+    </div>
+    <div id="borderbottom">
+    </div>
+    <div id="bordertop">
+    </div>
+    <script src="script.js"></script>
+    <div id="clock111" class="clock" onload="showTime()">
+    </div>
+    <script src="clock.js"></script>
+    <div id="calendercontents">
+    <script src="calender.js"></script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    
+    <title>資料夾
+    </title>
+    <link rel="shortcut icon" type="image/gif" href="portfoliologo.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="text/javascript" language="JavaScript">
+			function click(e){
+				document.getElementById("teste").innerHTML = "";
+				var menu = document.getElementById("context_menu");
+				var mouseEvent = e || event;
+				if (mouseEvent.button == 2 || mouseEvent.button == 3) {
+					mostrar(mouseEvent);
+					menu.onmouseout = function(e){
+						var mouseEvent = e || event;
+						var element = mouseEvent.relatedTarget || mouseEvent.toElement; 
+						if (element.nodeName != "LI") {
+							mouseEvent.toElement;
+						}
+					};
+				}
+				if (mouseEvent.button == 0 || mouseEvent.button == 1) {
+					esconder();
+				}
+			}
+			
+			document.onmousedown = click;
+			document.oncontextmenu = function(){
+				return false
+			};
+			function mostrar(e){
+				var menu = document.getElementById("context_menu");
+				menu.style.display = "block";
+				menu.style.top = e.pageY + 5 + "px";
+				menu.style.left = e.pageX + 5 + "px";
+			}
+			
+			function esconder(){
+				setTimeout(function(){
+					var menu = document.getElementById("context_menu");
+					menu.style.display = "none"
+				}, 100);
+			}
+		</script>
+  <script type="text/javascript">
+    if(navigator.userAgent.match(/Mobile|Windows Phone|Lumia|Android|iPhone|iPod|Blackberry|PlayBook|BB10|Opera Mini|\bCrMo\/|Opera Mobi/i) ){
+       location.replace("mb.html");
+     }
+   </script>
+   <script type="text/javascript">
+    if(navigator.userAgent.match(/Mobile|Windows Phone|Lumia|Android|iPhone|iPod|Blackberry|PlayBook|BB10|Opera Mini|\bCrMo\/|Opera Mobi/i) ){
+       location.replace("mb.html");
+     }
+   </script>
+  </head>
+  
+  <body oncontextmenu="return false" ondragstart="return false">
+    <div id="everything1">
+    <div id="teste"></div>
+    <div id="context_menu">
+        rwositas
+    </div>
+    <div id="borderrepeat1">
+    </div>
+    <div id="borderrepeat2"></div>
+    <div id="borderrepeat3"></div>
+    <div id="borderrepeat4"></div>
+    <div class="box111">
+        <div id="homenote1">
+          <sub>
+            <img src="emoji2.gif">
+          </sub>  
+          welcome
+        </div>
+        <div id="homenote2">
+            thank you for choosing to visit my portfolio. here is where i store all and any work i have created.
+            <br> also please consider checking out my <a href="https://rwositas.itch.io/" target="blank" style="text-decoration: none; color:#5f5151; border-bottom: dotted 1px #5f5151;">itch.io</a>
+            and other social media links!
+            <br> <br>
+            for any enquiries, please contact me via email or through any one of my socials!
+
+            <br> <br>
+            ⠀⠀⠀⠀⠀⠀⢀⣰⣀⠀⠀⠀⠀⠀⠀⠀⠀
+⢀⣀⠀⠀⠀⢀⣄⠘⠀⠀⣶⡿⣷⣦⣾⣿⣧
+⢺⣾⣶⣦⣰⡟⣿⡇⠀⠀⠻⣧⠀⠛⠀⡘⠏
+⠈⢿⡆⠉⠛⠁⡷⠁⠀⠀⠀⠉⠳⣦⣮⠁⠀
+⠀⠀⠛⢷⣄⣼⠃⠀⠀⠀⠀⠀⠀⠉⠀⠠⡧
+⠀⠀⠀⠀⠉⠋⠀⠀⠀⠠⡥⠄⠀⠀⠀⠀⠀
+        </div>
+        <div class="notes111" id="topnote">
+            ‎ ‎ ‎ ‎ 
+            <sub>
+                <img src="emoji2.gif"> 
+            </sub>
+            fyi
+        </div>
+        <div class="notes111" id="bottomnote">
+            ‎ ‎  ‎ 
+            <sub>
+                <img src="emoji2.gif">
+            </sub>
+            commission info
+        </div>
+        <div class="notes222" id="topnote2">
+            please do not repost/reupload my work without visible credit.
+            <a href="https://www.tumblr.com/hchano/161399228091/but-why-is-reposting-bad" target="_blank" style="text-decoration: none; border-bottom:#cfaebe 1px dotted; color:#d3b4c3;;">this is why!</a>
+            <sub>
+            <img src="emoji1.gif">
+        </sub>
+        </div>
+        <div class="notes222" id="bottomnote2">
+            visit my store!
+        </div>
+        <div class="header1">
+            <div id="header111">
+                my portfolio
+            </div>
+            <div id="border1">
+                <img src="border5.png">
+            </div>
+            <div id="sparkles">
+            </div>
+            <div id="lace4">
+                <img src="lace444.png">
+            </div>
+            <div id="lace5">
+                <img src="lace444.png">
+            </div>
+            <div class="options">
+                <div id="home111">
+                    home
+                </div>
+                <div id="threedee">
+                    <a href="construction.html" style="text-decoration: none;  color: #dadada;">3d stuff</a>
+                </div>
+                <div id="concept111">
+                    <a href="construction.html" style="text-decoration: none;  color: #dadada;">concept</a>
+                </div>
+                <div id="games111">
+                    <a href="games.html" style="text-decoration: none;  color: #dadada;">games</a>
+                </div>
+                <div id="illust111">
+                    <a href="construction.html" style="text-decoration: none;  color: #dadada;">illust</a>
+                </div>
+                <div id="pixel111">
+                    <a href="construction.html" style="text-decoration: none;  color: #dadada;">pixel</a>
+                </div>
+                <div id="web111">
+                    <a href="webdesign.html" style="text-decoration: none;  color: #dadada;">web design</a>
+                </div>
+            </div>      
+        </div>
+        <div id="rwositasstore">
+            <a href="store.html" target="blank">
+                <img src="rwositasstore.gif">
+            </a>
+        </div>
+        <div id="doilyportfolio">
+            <img src="doilyportfolio.png">
+        </div>
+        <div id="doilyinfo1">
+            <img src="doilyinfo.png">
+        </div>
+        <div id="doilyinfo2">
+            <img src="doilyinfo.png">
+        </div>
+        <div id="credit">
+            <a href="home.html" style="text-decoration: none; color:#6e5e5e; border-bottom: #6e5e5e 1px dotted;" target="blank"> . created by rwositas .</a>
+        </div>
+    </div>
+  </body>
+  </html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    
+    <title>꣑୧</title>
+    <link rel="shortcut icon" type="image/gif" href="bow1.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    
+    <link rel="stylesheet" href="nextpage4.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="text/javascript" language="JavaScript">
+			function click(e){
+				document.getElementById("teste").innerHTML = "";
+				var menu = document.getElementById("context_menu");
+				var mouseEvent = e || event;
+				if (mouseEvent.button == 2 || mouseEvent.button == 3) {
+					mostrar(mouseEvent);
+					menu.onmouseout = function(e){
+						var mouseEvent = e || event;
+						var element = mouseEvent.relatedTarget || mouseEvent.toElement; 
+						if (element.nodeName != "LI") {
+							mouseEvent.toElement;
+						}
+					};
+				}
+				if (mouseEvent.button == 0 || mouseEvent.button == 1) {
+					esconder();
+				}
+			}
+			
+			document.onmousedown = click;
+			document.oncontextmenu = function(){
+				return false
+			};
+			function mostrar(e){
+				var menu = document.getElementById("context_menu");
+				menu.style.display = "block";
+				menu.style.top = e.pageY + 5 + "px";
+				menu.style.left = e.pageX + 5 + "px";
+			}
+			
+			function esconder(){
+				setTimeout(function(){
+					var menu = document.getElementById("context_menu");
+					menu.style.display = "none"
+				}, 100);
+			}
+			
+		</script>
+          <script type="text/javascript">
+            if(navigator.userAgent.match(/Mobile|Windows Phone|Lumia|Android|iPhone|iPod|Blackberry|PlayBook|BB10|Opera Mini|\bCrMo\/|Opera Mobi/i) ){
+               location.replace("mb.html");
+             }
+           </script>
+           <script type="text/javascript">
+            if(navigator.userAgent.match(/Mobile|Windows Phone|Lumia|Android|iPhone|iPod|Blackberry|PlayBook|BB10|Opera Mini|\bCrMo\/|Opera Mobi/i) ){
+               location.replace("mb.html");
+             }
+           </script>
+  </head>
+
+  <body oncontextmenu="return false" ondragstart="return false">
+    <div id="everything">
+    <div id="teste"></div>
+    <div id="context_menu">
+        © rwositas
+    </div>
+    <div id="lace1">
+        <img src="lace1.png">
+    </div>
+    <div id="diarycontent1">
+        2nd december, 2024 <br>
+     </div>
+     <div id="diarycontent3">
+        5th december, 2024 <br>
+     </div>
+    <div id="diarycontent2">
+      i feel like november completely flew by, because i have not written a single diary entry for that month <img src="emoji7.gif">... i've been completely busy trying to develop my portfolio as well as other sites. namely my <a href="portfolio.html" target="blank" style="text-decoration: none; color:#dbbbcf; border-bottom: 1px dotted #dbbbcf;">portfolio</a> and <a href="store.html" target="blank" style="text-decoration: none; color:#dbbbcf; border-bottom: 1px dotted #dbbbcf;">store</a><img src="emoji2.gif">. 
+    </div>
+    <div id="diarycontent4">
+     hoping to release a game before the new year. also need to make my itch.io profile look presentable <img src="emoji4.gif">. a lot of stuff to do, really...<img src="emoji7.gif">.
+     </div>
+    <div id="nextpage">
+        <a href="nextpage3.html" style="text-decoration: none; color:#775d5d;">
+            ⭠
+        </a>
+
+    </div>
+    <div id="pagenumber1">
+        <sub style="font-size: 10px; position: absolute; left: -16px; top: 3.6px;">❤︎</sub> 
+        page 9
+    </div>
+    <div id="pagenumber">
+        page 8
+        <sub style="font-size: 10px; position: absolute; left: 46px; top: 3px;">❤︎</sub> 
+    </div>
+    <div id="lace2">
+        <img src="lace1.png">
+    </div>
+    <div id="lace4">
+        <img src="lace3.png">
+    </div>
+    <div id="lace5">
+        <img src="lace1.png">
+    </div>
+    <div id="lace6">
+        <img src="lace1.png">
+    </div>
+    <div id="lace3">
+        <img src="lace3.png">
+    </div>
+    <div id="returnhome" style="cursor: url('returnhome.png');">
+        <a href="home.html"><img src="dollhome.png"></a>
+    </div>
+    <div id="diary">
+        <img src="diary.png">
+    </div>
+    <div id="counter111">
+        <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39793858&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=39793858&main=1" /></noscript>
+    </div>
+    <div id="footer111">
+       © rwositas est. 2024 <br> 
+        ___________________</div>
+    </div>
+  </body>
+  </html>

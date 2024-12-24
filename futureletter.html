@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    
+    <title>𝑓𝑢𝑡𝑢𝑟𝑒 𝑙𝑒𝑡𝑡𝑒𝑟</title>
+    <link rel="shortcut icon" type="image/gif" href="fl1.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    
+    <link rel="stylesheet" href="futureletter.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="text/javascript" language="JavaScript">
+			function click(e){
+				document.getElementById("teste").innerHTML = "";
+				var menu = document.getElementById("context_menu");
+				var mouseEvent = e || event;
+				if (mouseEvent.button == 2 || mouseEvent.button == 3) {
+					mostrar(mouseEvent);
+					menu.onmouseout = function(e){
+						var mouseEvent = e || event;
+						var element = mouseEvent.relatedTarget || mouseEvent.toElement; 
+						if (element.nodeName != "LI") {
+							mouseEvent.toElement;
+						}
+					};
+				}
+				if (mouseEvent.button == 0 || mouseEvent.button == 1) {
+					esconder();
+				}
+			}
+			
+			document.onmousedown = click;
+			document.oncontextmenu = function(){
+				return false
+			};
+			function mostrar(e){
+				var menu = document.getElementById("context_menu");
+				menu.style.display = "block";
+				menu.style.top = e.pageY + 5 + "px";
+				menu.style.left = e.pageX + 5 + "px";
+			}
+			
+			function esconder(){
+				setTimeout(function(){
+					var menu = document.getElementById("context_menu");
+					menu.style.display = "none"
+				}, 100);
+			}
+			
+		</script>
+          <script type="text/javascript">
+            if(navigator.userAgent.match(/Mobile|Windows Phone|Lumia|Android|iPhone|iPod|Blackberry|PlayBook|BB10|Opera Mini|\bCrMo\/|Opera Mobi/i) ){
+               location.replace("mb.html");
+             }
+           </script>
+  </head>
+
+  <body oncontextmenu="return false" ondragstart="return false">
+    <div id="everything">
+    <div id="teste"></div>
+    <div id="context_menu">
+        © rwositas
+    </div>
+    <form id="futureLetterForm">
+        <label for="letter"></label><br>
+        <textarea id="letter" rows="10" cols="50" placeholder="write your letter here. . ." spellcheck="false" required></textarea>
+        
+        <label for="email" class="email11">enter your email!*</label><br>
+        <input type="email" id="email11" placeholder="example@example.com" required>
+
+        <label for="reminder-time" class="reminder-time">set reminder</label><br>
+    <select id="reminder-time">
+        <option value="0.1">1 week</option>
+        <option value="1">1 month</option>
+        <option value="2">2 months</option>
+        <option value="6">6 months</option>
+        <option value="12">1 year</option>
+        <option value="60">5 years</option>
+        <option value="120">10 years</option>
+    </select><br><br>
+    <button type="submit" id="submit1">submit letter</button>
+    </form>
+    <div id="letterarea">
+        hi
+    </div>
+    <div id="importantinfo1">
+        *your email will solely be used to deliver your magic link.
+    </div>
+    <div id="lace11">
+        <img src="lace2.png">
+    </div>
+    <div id="title22">
+        future letter
+    </div>
+    <div id="important111"></div>
+    <div id="squaredoilyframe">
+        <img src="squaredoilyframe.png">
+    </div>
+    <div id="lambiedoll" onclick="playSound('https://files.catbox.moe/eq5z29.mp3')">
+        <img src="lamb111.png">
+    </div>
+    <script src="onClick.js"></script>
+    <div id="workinprogress">
+        note: a conceptual idea. <br>
+        created by <a href="home.html" target="_blank" style="text-decoration: none; color:#91847b;">rwositas</a>
+        <br>
+    </div>
+    <div id="text11">
+        ᧔o᧓
+        future letter is a site solely for writing letters to your future self. <br> <br> you can write some words of kindness, or any goals you would like to achieve!
+    </div>
+    <div id="doily111">
+        <img src="doily1111.png">
+    </div>
+    <div id="lace22">
+        <img src="lace5.png">
+    </div>
+    <div id="sidelace">
+        <img src="lace6.png">
+    </div>
+    <div id="sidelace1">
+        <img src="lace6.png">
+    </div>
+    <div class="stars-container">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
+      <script src="app.js"></script>
+      <script>
+        const letterInput = document.getElementById("letter");
+        const letterForm = document.getElementById("futureLetterForm");
+    
+        // Customizing the required error message for the letter textarea
+        letterInput.addEventListener("invalid", function () {
+            if (!letterInput.value.trim()) {
+                letterInput.setCustomValidity("please write something in your letter ૮ ◞ ﻌ ◟ ა");
+            }
+        });
+    
+        // Reset custom message when the user starts typing
+        letterInput.addEventListener("input", function () {
+            letterInput.setCustomValidity("");
+        });
+    
+        letterForm.addEventListener("submit", function (event) {
+            const letterContent = letterInput.value.trim();
+            if (!letterContent) {
+                event.preventDefault(); // Prevent form submission if invalid
+            }
+        });
+    </script>
+
+<script>
+    const emailInput = document.getElementById("email11");
+    const letterForm2 = document.getElementById("futureLetterForm");
+
+    // Customizing the required and invalid email error message
+    emailInput.addEventListener("invalid", function () {
+        // Check if the email is invalid
+        if (emailInput.validity.typeMismatch) {
+            emailInput.setCustomValidity("please enter a valid email address (｡•́︿•̀｡) ");
+        } else if (emailInput.validity.valueMissing) {
+            emailInput.setCustomValidity("email is required! ");
+        }
+    });
+
+    // Reset custom message when the user starts typing
+    emailInput.addEventListener("input", function () {
+        emailInput.setCustomValidity(""); // Clear custom validity message
+    });
+
+    letterForm.addEventListener("submit", function (event) {
+        const emailContent = emailInput.value.trim();
+
+        // Prevent form submission if the email is invalid
+        if (!emailInput.checkValidity()) {
+            event.preventDefault(); // Prevent form submission
+        }
+    });
+</script>
+</div>
+  </body>
+  </html>

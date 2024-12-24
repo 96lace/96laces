@@ -1,0 +1,748 @@
+@font-face{
+    font-family: "bellefair";
+    src: url('Bellefair-Regular.ttf')
+}
+
+@font-face{
+    font-family: "adinekir";
+     src: url('adinekir.ttf')
+}
+
+
+:-webkit-any-link{
+    cursor: url(pencursor2.png), pointer;
+}
+
+::selection{
+   text-shadow: 0 0 2px #be9595;color:#be9595 
+}
+
+::-moz-selection{
+   text-shadow: 0 0 2px #be9595;color:#be9595
+}
+
+#diary{
+    position:absolute;
+    left: 930px;
+    top: 380px;
+    transform: scale(1.1);
+}
+
+#lace1{
+    position:absolute;
+    top: -20px;
+    left: -190px;
+    transform: scale(.8);
+}
+#lace2{
+    position:absolute;
+    top: -20px;
+    left: 890px;
+    transform: scale(.8);
+}
+
+#lace3{
+    z-index: 5;
+    position:absolute;
+    left: 910px;
+    top: 372px;
+}
+
+#lace4{
+    z-index: 5;
+    position:absolute;
+    left: 1281px;
+    top: 372px;
+}
+
+#lace5{
+    position:absolute;
+    top: 1170px;
+    left: -190px;
+    transform: scale(.8) rotate(180deg);
+}
+
+#lace6{
+    position:absolute;
+    top: 1170px;
+    left: 900px;
+    transform: scale(.8) rotate(180deg);
+}
+
+#welcome{
+    position: absolute;
+    font-size: 26px;
+    z-index: 5;
+    position:absolute;
+    left: 1028px;
+    top: 450px;
+    width: 400px;
+}
+
+#welcometext{
+    position: absolute;
+    color:#83766d;
+    font-size: 18px;
+    z-index: 5;
+    position:absolute;
+    left: 1016px;
+    top: 564px;
+    width: 200px;
+    text-align: center;
+}
+
+#pagenumber{
+    position: absolute;
+    color:#83766d;
+    font-size: 16px;
+    z-index: 5;
+    position:absolute;
+    left: 1540px;
+    top: 824px;
+    width: 300px;
+    transform: scale(1.4);
+}
+
+#nextpage{
+    position: absolute;
+    color:#83766d;
+    font-size: 30px;
+    z-index: 20;
+    position:absolute;
+    left: 1640px;
+    top: 812px;
+}
+
+#nextpage:hover{
+    transform: scale(1.1);
+}
+
+#diarycontent1{
+    position: absolute;
+    color:#83766d;
+    font-size: 20px;
+    z-index: 5;
+    position:absolute;
+    left: 1330px;
+    top: 450px;
+    padding-top: 6px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border:#9c8f85 2px dotted;
+    height: 30px;
+    width: 144px;
+    background-image: url('https://i.pinimg.com/564x/89/62/44/896244f1d14a2a124e958e24f78ab823.jpg');
+}
+
+#diarycontent2{
+    position: absolute;
+    color:#83766d;
+    font-size: 20px;
+    z-index: 5;
+    position:absolute;
+    left: 1330px;
+    top: 520px;
+    width: 300px;
+    line-height: 30px;
+}
+
+
+#glossary{
+    z-index: 5;
+    position:absolute;
+    left: 940px;
+    top: 450px;
+}
+
+#returnhome{
+    position: absolute;
+    top: 940px;
+    left: 1250px;
+}
+
+#returnhome:hover{
+   transform: scale(1.04);
+}
+
+
+body{
+   background-image: url('https://files.catbox.moe/tae96z.png');
+   background-size: 80%;
+   width: 100vw;
+   height: 100vh;
+   margin: 0;
+   overflow-y: hidden;
+   overflow-x: hidden;
+}
+
+#footer111{
+    position: absolute;
+    left: 1220px;
+    top: 1100px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#context_menu{
+    transform: scale(.8);
+    position: absolute;
+    z-index: 11111;
+    background-color:#fde9f2;
+	background-size: 100%;
+    border: 1px dotted #66574c;
+    color: #b8a79c;
+    display: none;
+    letter-spacing: 2px;
+    width: 102px;
+}
+
+#counter111{
+    z-index: 10;
+    position: absolute;
+    top: 398px;
+    left: 1580px;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    cursor: url(pencursor1.png), auto;
+    font-family:'bellefair';
+    font-weight: 500;
+    font-size: 20px;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/*ipad/tablet screens*/
+
+
+@media screen and (min-width: 800px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 40%;
+    left:-320px;
+    top:-120px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    #lace1{
+        top: 62px;
+    }
+    body{
+        background-size: 100% !important;
+    }
+}
+
+@media screen and (min-width: 900px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 50%;
+    left:-400px;
+    top:-100px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    #lace1{
+        top: 42px;
+    }
+    body{
+        background-size: 100% !important;
+    }
+}
+
+@media screen and (min-width: 1000px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 56%;
+    left:-420px;
+    top:-200px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    #lace1{
+        top: 140px;
+    }
+    #lace2{
+        top: 140px;
+    }
+    body{
+        background-size: 120% !important;
+    }
+    #lace5{
+        top: 1100px;
+    }
+    #lace6{
+        top: 1100px;
+    }
+}
+
+
+/*monitors*/
+
+@media screen and (min-width: 1200px) and (orientation: landscape){
+    #everything { 
+    position: absolute; 
+    zoom: 64%;
+    left:-340px;
+    top:-140px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    #lace1{
+        top: 82px;
+    }
+    #lace2{
+        top: 82px;
+    }
+    body{
+        background-size: 100% !important;
+    }
+    #lace5{
+        top: 1220px;
+    }
+    #lace6{
+        top: 1220px;
+    }
+}
+
+@media screen and (min-width: 1300px) and (orientation: landscape){
+    #everything { 
+    position: absolute; 
+    zoom: 70%;
+    left:-380px;
+    top:-160px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    #lace1{
+        top: 102px;
+    }
+    #lace2{
+        top: 102px;
+    }
+    body{
+        background-size: 120% !important;
+    }
+    #lace5{
+        top: 1100px;
+    }
+    #lace6{
+        top: 1100px;
+    }
+}
+
+@media screen and (min-width: 1400px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 80%;
+    left:-420px;
+    top:-140px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    #lace1{
+        top: 82px;
+    }
+    #lace2{
+        top: 82px;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+@media screen and (min-width: 1600px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 84%;
+    left:-400px;
+    top:-200px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    #lace1{
+        top: 142px;
+    }
+    #lace2{
+        top: 142px;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+@media screen and (min-width: 1680px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 90%;
+    left:-380px;
+    top:-120px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    #lace1{
+        top: 62px;
+    }
+    #lace2{
+        top: 62px;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+    
+@media screen and (min-width: 1700px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 100%;
+    left:-340px;
+    top:-80px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    #lace1{
+        top: 22px;
+    }
+    #lace2{
+        top: 22px;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+@media screen and (min-width: 1900px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 98%;
+    left:-360px;
+    top:-180px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    #lace1{
+        top: 122px;
+    }
+    #lace2{
+        top: 122px;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+/*around my monitor size*/
+
+@media screen and (min-width: 2000px) and (orientation: landscape){
+    #everything { 
+        position: absolute;
+        zoom: 90%;
+        top: -100px;
+        left: -180px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    #lace1{
+        top: 42px;
+    }
+    #lace2{
+        top: 42px;
+    }
+    body{
+        background-size: 100% !important;
+    }
+}
+
+@media screen and (min-width: 2200px) and (orientation: landscape){
+    #everything { 
+        position: absolute;
+        zoom: 90%;
+        top: -100px;
+        left: -100px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 100% !important;
+    }
+    #lace1{
+        top: 100px;
+    }
+    #lace2{
+        top: 100px;
+    }
+}
+
+@media screen and (min-width: 2500px) and (orientation: landscape){
+    #everything { 
+        position: absolute;
+        zoom: 100%;
+        top: -40px;
+        left: -20px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+
+    #lace1{
+        top: -20px;
+    }
+    #lace2{
+        top: -20px;
+    }
+    body{
+        background-size: 100% !important;
+    }
+    #lace5{
+        top: 1170px;
+    }
+    #lace6{
+        top: 1170px;
+    }
+}
+
+    @media screen and (min-width: 3000px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 260%;
+    left:240px;
+    top:80px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+} 
+
+@media screen and (min-width:4480px) and (orientation: landscape){
+    #everything { 
+        position: absolute;
+        zoom: 190%;
+        top: -160px;
+        left: -320px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 80% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 100% !important;
+    }
+    #lace1{
+        top: 1000px;
+    }
+    #lace2{
+        top: -20px;
+    }
+    #lace5{
+        top: 1170px;
+    }
+    #lace6{
+        top: 1170px;
+    }
+}
+
+
+/* tv monitors for some reason*/
+
+@media screen and (max-width:640px) and (orientation: landscape){
+    #everything { 
+        position: absolute;
+        zoom: 40%;
+        top: -100px;
+        left: -540px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+@media screen and (min-width:3840px) and (orientation: landscape){
+            #everything { 
+                position: absolute;
+                zoom: 190%;
+                top: -160px;
+                left: -320px; }
+            #text { 
+                overflow: auto; 
+                overflow: scroll; 
+            }
+            #text111{
+                -webkit-text-size-adjust: 145%;
+                text-size-adjust: 145%;
+                line-height: 10px !important;
+                opacity: 80% !important;
+            }
+            #context_menu{
+                line-height: 24px !important;
+            }
+            body{
+                background-size: 100% !important;
+            }
+}
+
+@media screen and (min-width:7000px) and (orientation: landscape){
+                #everything { 
+                    position: absolute;
+                    zoom: 200%;
+                    top: -180px;
+                    left: 480px; }
+                #text { 
+                    overflow: auto; 
+                    overflow: scroll; 
+                }
+                #text111{
+                    -webkit-text-size-adjust: 145%;
+                    text-size-adjust: 145%;
+                    line-height: 10px !important;
+                    opacity: 80% !important;
+                }
+                #context_menu{
+                    line-height: 24px !important;
+                }
+                body{
+                    background-size: 100% !important;
+                }
+}
+    
+   

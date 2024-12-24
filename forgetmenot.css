@@ -1,0 +1,564 @@
+@font-face{
+    font-family: "bellefair";
+    src: url('Bellefair-Regular.ttf')
+}
+
+@font-face{
+    font-family: "silenthill";
+    src: url('SLNTHLC.TTF')
+}
+
+
+a:-webkit-any-link{
+    cursor: url(lambcursor2.png), pointer;
+}
+
+::selection{
+   text-shadow: 0 0 2px #eceaea;
+}
+
+::-moz-selection{
+   text-shadow: 0 0 2px #eceaea;
+}
+
+#tree1{
+    font-size: 36px;
+    position: absolute;
+    left: 1410px;
+    top: 90px;
+    width: 800px;
+    color:#ffffff;
+    text-shadow:#423535 1px 1px 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+#lamb11{
+    position: absolute;
+    left: 740px;
+    top: 800px;
+}
+
+#lamb11:hover{
+    transform: rotate(10deg);
+}
+
+#moon{
+    z-index: 3;
+    position: absolute;
+    transform: scale(.3);
+    left: 700px;
+}
+
+#tree{
+    z-index: 2;
+    position: absolute;
+    transform: scale(1.1);
+    top: 260px;
+    left: 1030px;
+}
+
+#bg1{
+    position: absolute;
+    left: 1000px;
+    top: 300px;
+    transform: scale(1.4);
+}
+
+
+body{
+   background-color: #faecef;
+   background-size: 100%;
+   width: 100vw;
+   height: 100vh;
+   margin: 0;
+   overflow-y: hidden;
+   overflow-x: hidden;
+}
+
+#footer111{
+    z-index: 1000;
+    position: absolute;
+    left: 1230px;
+    top: 1100px;
+    font-size: 26px;
+    color:#ffffff;
+    text-shadow:#423535 1px 1px 10px;
+    font-family:'silenthill';
+}
+
+#lace2{
+    position: absolute;
+    top: 174px;
+    left: 971px;
+    transform: scale(1.277,1);
+}
+
+#context_menu{
+    position: absolute;
+    z-index: 11111;
+    background-image: url('https://i.pinimg.com/564x/5b/77/c1/5b77c1a18d28a8286253e4805ed4b42f.jpg');
+	background-size: 50%;
+    border: 1px dotted #66574c;
+    color: #ffffff;
+    display: none;
+    letter-spacing: 2px;
+    width: 14px;
+    height: 20px;
+    padding: 4px;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    cursor: url(lambcursor1.png), auto;
+    font-family:'bellefair';
+    font-weight: 500;
+    font-size: 20px;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+/*ipad/tablet screens*/
+
+
+@media screen and (min-width: 800px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 40%;
+    left:-320px;
+    top:-120px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 100% !important;
+    }
+}
+
+@media screen and (min-width: 900px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 50%;
+    left:-400px;
+    top:-100px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 100% !important;
+    }
+}
+
+@media screen and (min-width: 1000px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 56%;
+    left:-420px;
+    top:-120px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+/*mobile screens*/
+
+@supports not (-webkit-touch-callout: none) {
+    @media screen and (min-width: 1px) and (max-width: 428px) and (orientation: portrait){
+    #everything { position: absolute; zoom: 34%;
+    left:1300px;
+    top:-220px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); 
+  }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 200% !important;
+    }
+}}
+
+/*monitors*/
+
+@media screen and (min-width: 1200px) and (orientation: landscape){
+    #everything { 
+    position: absolute; 
+    zoom: 64%;
+    left:-340px;
+    top: -20px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 100% !important;
+    }
+}
+
+@media screen and (min-width: 1300px) and (orientation: landscape){
+    #everything { 
+    position: absolute; 
+    zoom: 70%;
+    left:-380px;
+    top: -100px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+@media screen and (min-width: 1400px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 80%;
+    left:-420px;
+    top:-90px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+@media screen and (min-width: 1600px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 84%;
+    left:-400px;
+    top:-120px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+@media screen and (min-width: 1680px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 90%;
+    left:-380px;
+    top:-120px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+    
+@media screen and (min-width: 1700px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 100%;
+    left:-340px;
+    top:-80px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+@media screen and (min-width: 1900px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 98%;
+    left:-360px;
+    top:-100px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+/*around my monitor size*/
+
+@media screen and (min-width: 2000px) and (orientation: landscape){
+    #everything { 
+        position: absolute;
+        zoom: 90%;
+        top: -80px;
+        left: -180px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 100% !important;
+    }
+}
+
+@media screen and (min-width: 2200px) and (orientation: landscape){
+    #everything { 
+        position: absolute;
+        zoom: 90%;
+        top: -100px;
+        left: -100px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 100% !important;
+    }
+}
+
+@media screen and (min-width: 2500px) and (orientation: landscape){
+    #everything { 
+        position: absolute;
+        zoom: 100%;
+        top: -40px;
+        left: -20px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 100% !important;
+    }
+}
+
+    @media screen and (min-width: 3000px) and (orientation: landscape){
+    #everything { position: absolute; zoom: 260%;
+    left:240px;
+    top:80px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+} 
+
+
+/* tv monitors for some reason*/
+
+@media screen and (max-width:640px) and (orientation: landscape){
+    #everything { 
+        position: absolute;
+        zoom: 40%;
+        top: -100px;
+        left: -540px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 90% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 120% !important;
+    }
+}
+
+@media screen and (min-width:3840px) and (orientation: landscape){
+            #everything { 
+                position: absolute;
+                zoom: 190%;
+                top: -160px;
+                left: -320px; }
+            #text { 
+                overflow: auto; 
+                overflow: scroll; 
+            }
+            #text111{
+                -webkit-text-size-adjust: 145%;
+                text-size-adjust: 145%;
+                line-height: 10px !important;
+                opacity: 80% !important;
+            }
+            #context_menu{
+                line-height: 24px !important;
+            }
+            body{
+                background-size: 100% !important;
+            }
+}
+
+@media screen and (min-width:7000px) and (orientation: landscape){
+                #everything { 
+                    position: absolute;
+                    zoom: 200%;
+                    top: -180px;
+                    left: 480px; }
+                #text { 
+                    overflow: auto; 
+                    overflow: scroll; 
+                }
+                #text111{
+                    -webkit-text-size-adjust: 145%;
+                    text-size-adjust: 145%;
+                    line-height: 10px !important;
+                    opacity: 80% !important;
+                }
+                #context_menu{
+                    line-height: 24px !important;
+                }
+                body{
+                    background-size: 100% !important;
+                }
+}
+
