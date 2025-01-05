@@ -9,6 +9,11 @@
 }
 
 @font-face{
+    font-family: "darling";
+    src: url('Darling.ttf')
+}
+
+@font-face{
     font-family: "qasik";
      src: url('QaskinBlack_PersonalUse.ttf')
 }
@@ -1503,11 +1508,23 @@ input[type="checkbox"]:checked::before {
     transform: rotate(180deg);
 }
 
+#number96{
+    transform: rotate(10deg);
+    font-family: 'darling';
+    position: absolute;
+    font-size: 80px;
+    top: -9px;
+    position: absolute;
+    left: 290px;
+    text-shadow: #ffffff3d 1px 0 10px;
+    -webkit-text-stroke: #7070703f .5px;
+}
+
 #title{
     font-family: 'qasik';
     font-size: 90px;
     position: absolute;
-    left: 280px;
+    left: 350px;
     text-shadow: #ffffff3d 1px 0 10px;
     -webkit-text-stroke: #7070703f .5px;
 }
