@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    
+    <title> 𝅘ྀི𝅥</title>
+    <link rel="shortcut icon" type="image/gif" href="https://files.catbox.moe/fni5lu.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <link rel="stylesheet" href="rilakkuma.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="text/javascript" language="JavaScript">
+			function click(e){
+				document.getElementById("teste").innerHTML = "";
+				var menu = document.getElementById("context_menu");
+				var mouseEvent = e || event;
+				if (mouseEvent.button == 2 || mouseEvent.button == 3) {
+					mostrar(mouseEvent);
+					menu.onmouseout = function(e){
+						var mouseEvent = e || event;
+						var element = mouseEvent.relatedTarget || mouseEvent.toElement; 
+						if (element.nodeName != "LI") {
+							mouseEvent.toElement;
+						}
+					};
+				}
+				if (mouseEvent.button == 0 || mouseEvent.button == 1) {
+					esconder();
+				}
+			}
+			
+			document.onmousedown = click;
+			document.oncontextmenu = function(){
+				return false
+			};
+			function mostrar(e){
+				var menu = document.getElementById("context_menu");
+				menu.style.display = "block";
+				menu.style.top = e.pageY + 5 + "px";
+				menu.style.left = e.pageX + 5 + "px";
+			}
+			
+			function esconder(){
+				setTimeout(function(){
+					var menu = document.getElementById("context_menu");
+					menu.style.display = "none"
+				}, 100);
+			}
+			
+		</script>
+          <script type="text/javascript">
+            if(navigator.userAgent.match(/Mobile|Windows Phone|Lumia|Android|iPhone|iPod|Blackberry|PlayBook|BB10|Opera Mini|\bCrMo\/|Opera Mobi/i) ){
+               location.replace("mb.html");
+             }
+           </script>
+           
+  </head>
+  
+  <body oncontextmenu="return false" ondragstart="return false">
+    <div id="everything">
+    <div id="teste"></div>
+    <div id="context_menu">
+    </div>
+    <div class="container1">
+        <div class="container2">
+            <div class="container3">
+                <div id="sign">
+                    <div id="signtext">
+                        3d models created by me
+                        <br>
+                        F2U download on my ko-fi ♡
+                    </div>
+                    <img src="sign.png">
+                </div>
+                <div id="additional_info">
+                    <img src="https://files.catbox.moe/36cx2j.png">
+                </div>
+                <div id="qrcode">
+                    <img src="https://files.catbox.moe/bczrbz.png">
+                </div>
+                <div id="rilakkumagif">
+                    <img src="3drilakkuma_gif.gif">
+                </div>
+                <iframe src="https://www.san-x.jp/"></iframe>
+                <div id="sizes"></div>
+                <div id="whiteboard">
+                    <img src="whiteboard1.png">
+                </div>
+                <div class="container31">
+                    <div id="container31text">
+                        <p1> Rilakkuma (right)</p1> is a beloved bear from the franchise SAN-X
+                        <br> his name means relaxed bear <br> which is fitting for him as his entire personality is about lazing around as much as possible
+                    </div>
+                    <div id="container31text1">
+                        <p2> Korilakkuma (left)</p2> is the mischevious little best friend of rilakkuma's  her name means little relaxed bear although this contrasts with her lively personality 
+                    </div>
+                </div>
+                <div class="container4">
+                    <div id="irl"></div>
+                </div>
+                <div id="title">
+                    Rilakkuma™
+                </div>
+                <div id="title2">
+                    Rilakkuma™
+                </div>
+                <div id="headdeco1">
+                    <img src="kkuma_header.png">
+                </div>
+                <div id="rilapic1">
+                    <img src="https://files.catbox.moe/r4wwf4.png">
+                </div>
+                <div id="wishlist">
+                    <div id="wishlisttitle">
+                        wishlist!
+                    </div>
+                    <div id="wishlisttitle1">
+                        wishlist!
+                    </div>
+                    <div class="wishlistcontainer">
+                        <div id="images">
+                        <img src="rilakkuma_plushies\cat.png">
+                        <img src="rilakkuma_plushies\cherries.png">
+                        <img src="rilakkuma_plushies\dango.png">
+                        <img src="rilakkuma_plushies\princess.png">
+                        <img src="rilakkuma_plushies\cat2.png">
+                    </div>
+                    </div>
+                   <img src="wishlist_1.png">
+                    </div>
+                </div>
+                <div id="banner1">
+                    <div id="banner1text">
+                        Who are they? 
+                    </div>
+                    <img src="kkuma_banner.png">
+                </div>
+                <div id="banner2">
+                    <div id="banner1text1">
+                        My collection!
+                    </div>
+                    <img src="kkuma_banner.png">
+                </div>
+                <div id="lace">
+                    96LACE
+                </div>
+                <div id="credits">
+                    <div id="text1">
+                        fan website for <a href="https://www.san-x.jp/" target="_blank" style="text-decoration:  none; font-family: 'cartoon'; border-bottom: 2px dotted #ffffff; color: #ffffff;"> san-x ©</a> <p3> </p3>3d models and web design by <a href="index.html" target="_blank" style="text-decoration: none; font-family: 'cartoon'; border-bottom: 2px dotted #ffffff; color: #ffffff;"> 96lace</a></p3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </body>
+  </html>
