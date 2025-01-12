@@ -124,7 +124,11 @@ nav{
 }
 
 #noteheader{
-    margin-left: 86px;
+    margin-left: 106px;
+}
+
+#noteheader2{
+    margin-left: 90px;
 }
 
 #noteheader1{
@@ -212,8 +216,22 @@ nav{
 #note1text{
     position: absolute;
     left: 20px;
-    width: 180px;
+    width: 200px;
+    height: 350px;
     font-size: 17px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+#note1text::-webkit-scrollbar {
+    padding-right: px;
+    width: 3px;
+} 
+    
+#note1text::-webkit-scrollbar-thumb{
+    background-color:#111111;
+    z-index: 10;
 }
 
 #note2{
