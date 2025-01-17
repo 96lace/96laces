@@ -72,32 +72,13 @@ a:-webkit-any-link{
     filter: drop-shadow(0 0 10px rgba(85, 79, 79, 0.377));
 }
 
-#conceptart111:hover{
-    transform: scale(.568)
-}
-
 #conceptart113{
-    transform: scale(.4);
+    transform: scale(2);
     position: absolute;
-    left: 200px;
-    top: 200px;
+    left: 1080px;
+    top: 1100px;
 }
 
-.zoomable {
-    cursor: url('zoomin.png'), auto;
-}
-    
-.medium-zoom-image--opened {
-    cursor: url('zoomout.png'), auto; 
-}
-
-.medium-zoom-overlay {
-    cursor: url('zoomout.png'), auto;
-  }
-
-#conceptart113:hover{
-    transform: scale(.408)
-}
 
 #conceptart112{
     transform: scale(.4);
@@ -106,9 +87,6 @@ a:-webkit-any-link{
     top: -200px;
 }
 
-#conceptart112:hover{
-    transform: scale(.408)
-}
 
 #numberthree{
     z-index: 5;
@@ -146,6 +124,7 @@ a:-webkit-any-link{
     background-color: #66574c00;
     overflow-x: hidden;
     overflow-y: auto;
+    
 }
 
 #virtualdiary{
@@ -168,18 +147,17 @@ a:-webkit-any-link{
 }
 
 #virtualroom{
-    top: -180px;
-    left: -380px;
-    left: 100px;
+    top: -82px;
+    left: 20px;
     position: absolute;
-    transform: scale(.36);
+    transform: scale(.87);
     filter: drop-shadow(0 0 10px rgba(85, 79, 79, 0.377));
 }
 
 
 #roomtext{
     position: absolute;
-    top: 380px;
+    top: 370px;
     left: 460px;
     color:#5f5151;
     width: 300px;
@@ -214,7 +192,7 @@ a:-webkit-any-link{
 
 #webtext{
     position: absolute;
-    top: 960px;
+    top: 910px;
     left: 60px;
     color:#5f5151;
     width: 300px;
