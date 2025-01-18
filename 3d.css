@@ -73,10 +73,10 @@ a:-webkit-any-link{
 }
 
 #conceptart113{
-    transform: scale(2);
+    transform: scale(1.3);
     position: absolute;
     left: 1080px;
-    top: 1100px;
+    top: 1060px;
 }
 
 
@@ -192,7 +192,7 @@ a:-webkit-any-link{
 
 #webtext{
     position: absolute;
-    top: 910px;
+    top: 1180px;
     left: 60px;
     color:#5f5151;
     width: 300px;
@@ -546,7 +546,7 @@ body{
     color: #66574c;
     display: none;
     letter-spacing: 2px;
-    width: 76px;
+    width: 62px;
 }
 
 
