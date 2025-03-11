@@ -41,8 +41,19 @@
 #sidelace{
     transform: scale(1,1.1) rotate(-90deg);
     position: absolute;
-    top: 600px;
-    left: -558px;
+    left: -28px !important;
+    top: 780px !important;
+    
+    width: 100vw; /* Ensures it spans the width */
+}
+
+#sidelace2{
+    transform: scale(1,1.1) rotate(-90deg);
+    position: absolute;
+    left: -28px !important;
+    top: 2180px !important;
+    
+    width: 100vw; /* Ensures it spans the width */
 }
 
 #sidelace1{
@@ -50,6 +61,13 @@
     position: absolute;
     top: 600px;
     left: 1878px;
+}
+
+#sidelace3{
+    transform: scale(1,1.1) rotate(90deg);
+    position: absolute;
+    top: 2000px !important;
+    left: 1850px;
 }
 
 #squaredoilyframe{
@@ -428,7 +446,8 @@ html {
         background-size: 100% !important;
     }
     #sidelace{
-        left: -237px;
+        top: 630px !important;
+        left: -236px !important;
     }
 
     #sidelace1{
@@ -467,7 +486,7 @@ html {
         background-size: 120% !important;
     }
     #sidelace{
-        left: -195px;
+        left: -240px !important;
     }
 
     #sidelace1{
@@ -494,11 +513,13 @@ html {
     #context_menu{
         line-height: 24px !important;
     }
-    #lace1{
-        top: 82px;
+    #sidelace{
+        top: 450px !important;
+        left: -236px !important;
     }
-    #lace2{
-        top: 82px;
+    #sidelace1{
+        top: 535px !important;
+        left: 1774px !important;
     }
     body{
         background-size: 120% !important;
@@ -532,11 +553,15 @@ html {
         background-size: 120% !important;
     }
     #sidelace{
-        left: -175px;
+        left: -370px !important;
     }
-
     #sidelace1{
-        left: 1918px;
+        top: 580px !important;
+        left: 2014px !important;
+    }
+    #sidelace3{
+        top: 1980px !important;
+        left: 2014px !important;
     }
 
 }
@@ -568,11 +593,13 @@ html {
         background-size: 120% !important;
     }
     #sidelace{
-        left: -195px;
+        top: 400px !important;
+        left: -440px !important;
     }
 
     #sidelace1{
-        left: 1859px;
+        top: 600px !important;
+        left: 1859px !important;
     }
 }
 
@@ -631,11 +658,20 @@ html {
         background-size: 120% !important;
     }
     #sidelace{
-        left: -216px;
+        top: 200px !important;
+        left: -536px !important;
     }
-
+    #sidelace2{
+        top: 1600px !important;
+        left: -536px !important;
+    }
     #sidelace1{
-        left: 1915px;
+        top: 600px !important;
+        left: 1917px !important;
+    }
+    #sidelace3{
+        top: 2000px !important;
+        left: 1917px !important;
     }
 }
 
@@ -659,8 +695,9 @@ html {
     #context_menu{
         line-height: 24px !important;
     }
-    #lace1{
-        top: 42px;
+    #sidelace{
+        top: 200px !important;
+        left: 700px !important;
     }
     #lace2{
         top: 42px;
@@ -691,11 +728,12 @@ html {
     body{
         background-size: 100% !important;
     }
-    #lace1{
-        top: 100px;
+    #sidelace{
+        top: 190px !important;
+        left: -963px !important;
     }
-    #lace2{
-        top: 100px;
+    #sidelace1{
+        left: 1910px !important;
     }
 }
 
@@ -723,11 +761,19 @@ html {
         background-size: 100% !important;
     }
     #sidelace{
-        left: -555px;
+        top: -34px !important;
+        left: -1200px !important;
+    }
+    #sidelace2{
+        top: 1370px !important;
+        left: -1200px !important;
     }
 
     #sidelace1{
-        left: 1876px;
+        left: 1880px !important;
+    }
+    #sidelace3{
+        left: 1880px !important;
     }
 }
 
@@ -749,6 +795,10 @@ html {
     }
     body{
         background-size: 120% !important;
+    }
+    #sidelace{
+        top: 200px !important;
+        left: 700px !important;
     }
 } 
 
