@@ -314,7 +314,7 @@ html {
         line-height: 24px !important;
     }
     #lace1{
-        top: 140px;
+        top: 140px !important;
     }
     #lace2{
         top: 140px;
@@ -353,7 +353,7 @@ html {
         line-height: 24px !important;
     }
     #lace1{
-        top: 82px;
+        top: 82px !important;
     }
     #lace2{
         top: 82px;
@@ -389,7 +389,7 @@ html {
         line-height: 24px !important;
     }
     #lace1{
-        top: 102px;
+        top: 102px !important;
     }
     #lace2{
         top: 102px;
@@ -423,7 +423,7 @@ html {
         line-height: 24px !important;
     }
     #lace1{
-        top: 82px;
+        top: 82px !important;
     }
     #lace2{
         top: 82px;
@@ -451,7 +451,7 @@ html {
         line-height: 24px !important;
     }
     #lace1{
-        top: 142px;
+        top: 142px !important;
     }
     #lace2{
         top: 142px;
@@ -479,7 +479,7 @@ html {
         line-height: 24px !important;
     }
     #lace1{
-        top: 62px;
+        top: 62px !important;
     }
     #lace2{
         top: 62px;
@@ -534,7 +534,7 @@ html {
         line-height: 24px !important;
     }
     #lace1{
-        top: 122px;
+        top: 122px !important;
     }
     #lace2{
         top: 122px;
@@ -565,13 +565,19 @@ html {
         line-height: 24px !important;
     }
     #lace1{
-        top: 42px;
+        top: 42px !important;
     }
     #lace2{
-        top: 42px;
+        top: 42px !important;
     }
     body{
         background-size: 100% !important;
+    }
+    #lace5{
+        top: 1150px !important;
+    }
+    #lace6{
+        top: 1150px !important;
     }
 }
 
@@ -624,7 +630,7 @@ html {
     }
 
     #lace1{
-        top: -20px;
+        top: -20px !important;
     }
     #lace2{
         top: -20px;
@@ -633,10 +639,10 @@ html {
         background-size: 100% !important;
     }
     #lace5{
-        top: 1170px;
+        top: 1310px !important; 
     }
     #lace6{
-        top: 1170px;
+        top: 1310px !important; 
     }
 }
 
@@ -659,7 +665,59 @@ html {
     body{
         background-size: 120% !important;
     }
-} 
+    #lace1{
+        top: -20px !important;
+    }
+    #lace2{
+        top: -20px;
+    }
+    body{
+        background-size: 100% !important;
+    }
+    #lace5{
+        top: 1310px !important; 
+    }
+    #lace6{
+        top: 1310px !important; 
+    }
+}
+
+
+@media screen and (min-width:4480px) and (orientation: landscape){
+    #everything { 
+        position: absolute;
+        zoom: 190%;
+        top: -160px;
+        left: -320px; }
+    #text { 
+        overflow: auto; 
+        overflow: scroll; 
+    }
+    #text111{
+        -webkit-text-size-adjust: 145%;
+        text-size-adjust: 145%;
+        line-height: 10px !important;
+        opacity: 80% !important;
+    }
+    #context_menu{
+        line-height: 24px !important;
+    }
+    body{
+        background-size: 100% !important;
+    }
+    #lace1{
+        top: 1000px;
+    }
+    #lace2{
+        top: -20px;
+    }
+    #lace5{
+        top: 1170px;
+    }
+    #lace6{
+        top: 1170px;
+    }
+}
 
 
 /* tv monitors for some reason*/
